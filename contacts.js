@@ -1,6 +1,6 @@
 const fs = require('fs').promises;
-const path = require('path');
 const {nanoid} = require('nanoid')
+const path = require('path');
 
 const contactsPath = path.resolve('./db', 'contacts.json');
 
@@ -24,8 +24,7 @@ const getContactById = async (contactId) => {
     }
     catch (err) {
         console.error('Error:', err);
-    }
-    
+    }    
 }
 
 const removeContact = async (contactId) => {
@@ -42,8 +41,7 @@ const removeContact = async (contactId) => {
     }
     catch (err) {
         console.error('Error:', err);
-    }
-    
+    }    
 }
 
 const addContact = async (name, email, phone) => {

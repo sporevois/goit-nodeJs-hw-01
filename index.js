@@ -1,5 +1,4 @@
 const operations = require('./contacts');
-
 const argv = require("yargs").argv;
 
 const invokeAction = async ({ action, id, name, email, phone }) => {
@@ -27,8 +26,4 @@ const invokeAction = async ({ action, id, name, email, phone }) => {
   }
 }
 
-// invokeAction({ action: 'list' });
-// invokeAction({ action: 'get', id: 3 });
-// invokeAction({ action: 'add', name: 'Stanislav', email: 'stas@gmail.com', phone:'555-55-55' });
-// invokeAction({ action: 'remove', id:'OivLggvdZURZH09UtXJow' });
 invokeAction(argv);
